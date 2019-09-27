@@ -1,5 +1,5 @@
 {
-  "name": "cv-assignment",
+  "name": "bitcoin-price-tracker",
   "description": "The code practice of a CV website",
   "scripts": {
     "build": "parcel build src/index.html",
