@@ -33,7 +33,7 @@ const main = function() {
         prices.push(bpi[index]);
       }
       prices.map((value, index) => {
-        let row = index % 2 == 0 ? $('<tr/>') : $("<tr class= 'dark-row'/>");
+        let row = index % 2 === 0 ? $('<tr/>') : $("<tr class= 'dark-row'/>");
         row.appendTo($('#price-data-table'));
         let currency = $('<td/>');
         currency.html(value.code);
@@ -62,8 +62,8 @@ const main = function() {
   };
 };
 
-{
+(function app() {
   request.get('https://api.coindesk.com/v1/bpi/currentprice.json', data => {
     new main(data).build();
   });
-}
+})();
