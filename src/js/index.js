@@ -32,8 +32,8 @@ const main = function() {
       for (let index in bpi) {
         prices.push(bpi[index]);
       }
-      prices.map(value => {
-        let row = $('<tr/>');
+      prices.map((value, index) => {
+        let row = index % 2 == 0 ? $('<tr/>') : $("<tr class= 'dark-row'/>");
         row.appendTo($('#price-data-table'));
         let currency = $('<td/>');
         currency.html(value.code);
