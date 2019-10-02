@@ -8,7 +8,26 @@
     <link rel="stylesheet" href="./css/index.scss" />
   </head>
   <body>
-    <div id="main"></div>
+    <div id="main" class="container-fluid loading-mask">
+      <div class="main-display-wrapper">
+        <h1 id="chartname"></h1>
+        <p class="date-banner">Updated:<span id="date-banner-data"></span></p>
+
+        <p class="disclmr" id="disclmr"></p>
+
+        <table class="table table-bordered table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Currency</th>
+              <th scope="col">Description</th>
+              <th scope="col">Rate</th>
+              <th scope="col">Symbol</th>
+            </tr>
+          </thead>
+          <tbody id="price-data-table"></tbody>
+        </table>
+      </div>
+    </div>
     <script src="./js/index.js"></script>
   </body>
 </html>
