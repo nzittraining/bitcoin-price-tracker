@@ -20,6 +20,6 @@ Gitpod URL: `https://gitpod.io/#https://github.com/[your_username]/bitcoin-price
 
 For more information, please refer to [Gitpod's official website](https://www.gitpod.io/docs/)
 
----
+-----
 
 Happy coding! Anything you need, don't be hesitate to contact our WeChat assistant **nz-it-training**.
